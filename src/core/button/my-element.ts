@@ -7,6 +7,10 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+class Bif {
+	bop = 'bim'
+}
+
 /**
  * An example element.
  *
@@ -25,7 +29,7 @@ export class MyElement extends LitElement {
     }
   `;
 
-	_name = 'World';
+	_name = new Bif().bop;
 	_count = 0;
 
 	// Getter and setter for 'name'
