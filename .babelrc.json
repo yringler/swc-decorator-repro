@@ -1,0 +1,21 @@
+{
+	"sourceType": "unambiguous",
+	"presets": [
+		[
+			"@babel/preset-env"
+		],
+		"@babel/preset-typescript"
+	],
+	"plugins": [
+		[
+			"@babel/plugin-proposal-decorators",
+			{
+				"decoratorsBeforeExport": true,
+				"version": "2023-05"
+			}
+		],
+		[
+			"@babel/plugin-proposal-class-properties"
+		]
+	]
+}

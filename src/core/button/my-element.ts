@@ -25,17 +25,28 @@ export class MyElement extends LitElement {
     }
   `;
 
-	/**
-	 * The name to say "Hello" to.
-	 */
-	@property()
-	name = 'World';
+	_name = 'World';
+	_count = 0;
 
-	/**
-	 * The number of times the button has been clicked.
-	 */
+	// Getter and setter for 'name'
+	get name() {
+		return this._name;
+	}
+
+	@property()
+	set name(newName) {
+		this._name = newName;
+	}
+
+	// Getter and setter for 'count'
+	get count() {
+		return this._count;
+	}
+
 	@property({ type: Number })
-	count = 0;
+	set count(newCount) {
+		this._count = newCount;
+	}
 
 	override render() {
 		return html`

@@ -18,7 +18,7 @@
 	  "noImplicitThis": true,
 	  "moduleResolution": "node",
 	  "allowSyntheticDefaultImports": true,
-	  "experimentalDecorators": true,
+	  "experimentalDecorators": false,
 	  "forceConsistentCasingInFileNames": true,
 	  "noImplicitOverride": true,
 	  "plugins": [
