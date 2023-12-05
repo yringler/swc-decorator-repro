@@ -15,7 +15,7 @@ const config: StorybookConfig = {
     autodocs: "tag",
   },
   webpackFinal(config, options) {
-    const swcRule = config.module!.rules!.flatMap(rule => (<any>rule)?.use?.[0]?.options?.jsc).find(jsc => !!jsc);
+    const swcRule = config.module!.rules!.flatMap(rule => (<any>rule)?.options?.jsc).find(jsc => !!jsc);
     swcRule.parser = {
       ...swcRule.parser,
       decorators: true
