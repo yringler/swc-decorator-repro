@@ -16,7 +16,6 @@ const config: StorybookConfig = {
   },
   webpackFinal(config, options) {
     const swcRule = config.module!.rules!.flatMap(rule => (<any>rule)?.use?.[0]?.options?.jsc).find(jsc => !!jsc);
-    console.dir(swcRule);
     swcRule.parser = {
       ...swcRule.parser,
       decorators: true
